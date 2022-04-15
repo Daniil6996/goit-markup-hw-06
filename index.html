@@ -469,19 +469,28 @@
               <label for="mail" class="form-label"
                 >Подпишитесь на рассылку
               </label>
-              <input
-                class="form-input"
-                type="mail"
-                name="user_mail"
-                id="mail"
-                placeholder="Email"
-              />
+              <div class="footer-form-item">
+                <input
+                  class="form-input"
+                  type="mail"
+                  name="user_mail"
+                  id="mail"
+                  placeholder="Email"
+                />
+
+                <button type="submit" class="btn-subscribe">
+                  Подписаться
+                  <svg class="btn-subscribe-icon" width="24" height="24">
+                    <use href="images/svg/sprite.svg#send"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
           <svg class="modal-button-icon">
@@ -538,8 +547,8 @@
               required
             />
             <label for="policy-checkbox" class="contact-form-checkbox-label"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a></label
+              >Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a class="link-treaty" href="">Условия договора</a></label
             >
           </div>
           <button type="submit" class="contact-form-submit">Отправить</button>
